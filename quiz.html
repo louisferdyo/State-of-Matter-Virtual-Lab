@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States of Matter Drag and Drop Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Virtual Matter Lab</h1>
+        <nav>
+          <a href="index.html">Experiment</a>
+          <a href="quiz.html">Quiz</a>
+        </nav>
+      </header>
+      <div id="guide-sidebar" class="sidebar">
+        <h2>Experiment Guide</h2>
+        <p>Use the slider to change the temperature and observe how the state of water changes.</p>
+        <ul>
+            <li><strong>Below 0°C</strong>: Water is ice.</li>
+            <li><strong>0°C - 99°C</strong>: Water is in liquid state.</li>
+            <li><strong>100°C+</strong>: Water boils, and steam forms.</li>
+        </ul>
+        <button id="close-sidebar">Close</button>
+    </div>
+    <button id="open-sidebar" class="open-btn">Guide</button>
+    <div class="container">
+        <h1>Drag and Drop: States of Matter</h1>
+        <div class="quiz-area">
+            <div class="drop-zone" id="solid-zone">
+                <img src="images/ice.png" alt="Ice" />
+                <p>Solid (Ice)</p>
+            </div>
+            <div class="drop-zone" id="liquid-zone">
+                <img src="images/glass-water.png" alt="Water" />
+                <p>Liquid (Water)</p>
+            </div>
+            <div class="drop-zone" id="gas-zone">
+                <img src="images/steam.png" alt="Steam" />
+                <p>Gas (Steam)</p>
+            </div>
+        </div>
+
+        <div class="draggable-items">
+            <div class="draggable" draggable="true" id="ice-description">the material keeps the same volume</div>
+            <div class="draggable" draggable="true" id="water-description">Water (Liquid)</div>
+            <div class="draggable" draggable="true" id="steam-description">Steam (Gas)</div>
+            <div class="draggable" draggable="true" id="rock-description">Rock (Solid)</div>
+            <div class="draggable" draggable="true" id="oil-description">Oil (Liquid)</div>
+            <div class="draggable" draggable="true" id="air-description">Air (Gas)</div>
+        </div>
+
+        <div class="result">
+            <button id="checkAnswers">Check Answers</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color:#7AB2D3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    ;
+  }
+  
+  .header nav a {
+    color: white;
+    padding : 20px;
+    text-decoration: none;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    color: #f0f8ff;
+}
+
+.sidebar button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #45a049;
+}
+
+/* Open button styling */
+.open-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.open-btn:hover {
+    background-color: #45a049;
+}
+  
+  /* Main Container Styling */
+  .container {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lab Section */
+  .lab {
+    margin-top: 20px;
+  }
+  
+  .water-container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .water-image {
+    max-width: 40%;
+    max-height: 100%;
+    display: none;
+    margin: 5px;
+  }
+  
+  .gas-state {
+    position: relative;
+    width: 150px;
+    height: 300px;
+  }
+  
+  /* Align the glass properly at the bottom */
+  .glass {
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    width: 80%;
+    height: auto;
+    z-index: 1;
+  }
+  
+  /* Align the steam above the glass */
+  .steam {
+    position: absolute;
+    top: 0;
+    width: 60%; /* Adjust to fit inside the gas-state */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: steamRise 3s infinite ease-in-out;
+  }
+  
+  /* Steam rising animation */
+  @keyframes steamRise {
+    0% {
+      opacity: 0.5;
+      transform: translateX(-50%) translateY(10px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translateX(-50%) translateY(10px);
+    }
+  }
+  
+  /* Temperature and Slider */
+  .temperature-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  #temperature-slider {
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .instruction {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #4A628A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+  }
+
+  
+
+  

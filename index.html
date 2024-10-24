@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>States of Matter Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Virtual Matter Lab</h1>
+    <nav>
+      <a href="#">Experiment</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <div id="guide-sidebar" class="sidebar">
+    <h2>Experiment Guide</h2>
+    <p>Use the slider to change the temperature and observe how the state of water changes.</p>
+    <ul>
+        <li><strong>Below 0°C</strong>: Water is ice.</li>
+        <li><strong>0°C - 99°C</strong>: Water is in liquid state.</li>
+        <li><strong>100°C+</strong>: Water boils, and steam forms.</li>
+    </ul>
+    <button id="close-sidebar">Close</button>
+</div>
+<button id="open-sidebar" class="open-btn">Guide</button>
+
+  <div class="container">
+    <h2>States of Matter: Water Experiment</h2>
+    <div class="lab">
+      <div class="water-container" id="water-container">
+        <img class="water-image" id="ice" src="images/ice.png" alt="Ice" />
+        <img class="water-image" id="liquid-water" src="images/glass water.png" alt="Water" />
+
+        <!-- Gas state: Glass of water with steam on top -->
+        <div class="gas-state" id="gas-state">
+          <img class="steam" src="images/hot-steam-512.png" alt="Steam Icon" />
+          <img class="glass" src="images/glass water.png" alt="Glass of Water" />
+        </div>
+      </div>
+
+      <p class="temperature-label">
+        Temperature: <span id="temperature-value">-5</span>°C
+      </p>
+
+      <input
+        type="range"
+        id="temperature-slider"
+        min="-10"
+        max="110"
+        value="-5"
+        step="1"
+      />
+
+      <p class="instruction">Adjust the temperature to observe state changes!</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Virtual Matter Lab.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
