@@ -14,7 +14,7 @@ openSidebarBtn.addEventListener("click", () => {
 });
 
 closeSidebarBtn.addEventListener("click", () => {
-  sidebar.style.left = "-300px"; // Slide out the sidebar
+  sidebar.style.left = "-400px"; // Slide out the sidebar
   openSidebarBtn.style.display = "block";
 });
 // Function to update water state based on temperature

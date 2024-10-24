@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States of Matter Drag and Drop Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Virtual Matter Lab</h1>
+        <nav>
+          <a href="../index.html">Experiment</a>
+          <a href="quiz.html">Quiz</a>
+        </nav>
+      </header>
+      <div class="sidebar" id="guide-sidebar">
+        <h2>States of Matter</h2>
+        <button id="close-sidebar">Close</button>
+        <div class="content">
+            <h3>Understanding Matter</h3>
+            <p>Matter exists in three main states: solid, liquid, and gas. The state of matter depends on the temperature and pressure conditions.</p>
+            
+            <h3>Ice Melting into Water</h3>
+            <p>When ice (solid water) is heated, it absorbs energy in the form of heat. This energy causes the ice molecules to vibrate more vigorously until they break free from their rigid structure. This process is called melting.</p>
+            
+            <h4>Melting Process:</h4>
+            <ul>
+                <li><strong>Temperature Increase:</strong> As the temperature rises, the heat causes the ice to transition to liquid water.</li>
+                <li><strong>Latent Heat of Fusion:</strong> The energy required to change ice at 0°C to water at 0°C without changing temperature is called the latent heat of fusion, which is approximately 334 J/g.</li>
+            </ul>
+            
+            <h3>Heat Process and Calculations</h3>
+            <p>During state changes, the energy absorbed or released can be calculated using the following formula:</p>
+            
+            <h4>Q = m * L</h4>
+            <ul>
+                <li><strong>Q:</strong> Heat energy (in Joules)</li>
+                <li><strong>m:</strong> Mass of the substance (in grams)</li>
+                <li><strong>L:</strong> Latent heat (J/g) - for fusion, use approximately 334 J/g for ice melting.</li>
+            </ul>
+            
+            <h4>Example Calculation:</h4>
+            <p>If you have 100 grams of ice at 0°C, the heat required to melt it into water is:</p>
+            <p><strong>Q = m * L = 100 g * 334 J/g = 33,400 J</strong></p>
+            
+            <h3>State Changes Summary</h3>
+            <ul>
+                <li><strong>Melting:</strong> Ice to Water (absorbs heat)</li>
+                <li><strong>Freezing:</strong> Water to Ice (releases heat)</li>
+                <li><strong>Evaporation:</strong> Water to Gas (absorbs heat)</li>
+                <li><strong>Condensation:</strong> Gas to Water (releases heat)</li>
+                <li><strong>Sublimation:</strong> Ice to Gas (absorbs heat)</li>
+                <li><strong>Deposition:</strong> Gas to Ice (releases heat)</li>
+            </ul>
+            <br/>
+            </div>
+        </div>
+    </div>
+    <button id="open-sidebar" class="open-btn">Guide</button>
+    <div class="container">
+        <div class="result">
+            <p id="scoreDisplay">Score: 0</p> 
+            <p id="feedback"></p>
+        </div>
+        <h1>Drag and Drop: States of Matter</h1>
+        <div class="quiz-area">
+            <div class="drop-zone" id="solid-zone">
+                <img src="../images/ice.png" alt="Ice" />
+                <p>Solid (Ice)</p>
+            </div>
+            <div class="drop-zone" id="liquid-zone">
+                <img src="../images/glass water.png" alt="Water" />
+                <p>Liquid (Water)</p>
+            </div>
+            <div class="drop-zone" id="gas-zone">
+                <img src="../images/hot-steam-512.png" alt="Steam" />
+                <p>Gas (Steam)</p>
+            </div>
+        </div>
+
+        <div class="draggable-items">
+            <div class="draggable" draggable="true" id="ice-description">___ melts into water</div>
+            <div class="draggable" draggable="true" id="water-description">the matter that takes the shape of its container but has a definite volume</div>
+            <div class="draggable" draggable="true" id="steam-description">water when it reaches 100°C at standard atmospheric pressure</div>
+            <div class="draggable" draggable="true" id="ice-description">water when it reaches 0°C or under at standard atmospheric pressure</div>
+            <div class="draggable" draggable="true" id="water-description">The material flows and there's only little spaces between the particles</div>
+            <div class="draggable" draggable="true" id="steam-description">his state has the most amount of energy (heat) </div>
+            <div class="draggable" draggable="true" id="ice-description">This state has the least amount of energy (heat) </div>
+            <div class="draggable" draggable="true" id="water-description">This material takes the shape of its container but has a fixed volume</div>
+            <div class="draggable" draggable="true" id="steam-description">Ice turns into ___ during sublimation</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Virtual Matter Lab.</p>
+    </footer>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>

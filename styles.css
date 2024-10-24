@@ -1,44 +1,49 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #DFF2EB;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  
-  /* Header Styling */
-  .header {
-    background-color:#7AB2D3;
+    font-family: var(--lato); /* Apply Lato font here */
+}
+
+/* Header Styling */
+.header {
+    background-color: #7AB2D3;
     color: white;
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
-    ;
-  }
-  
-  .header nav a {
-    color: white;
-    padding : 20px;
-    text-decoration: none;
-  }
-  
-  .header nav a:hover {
-    text-decoration: underline;
-  }
+}
 
-  .sidebar {
+.header nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hidden */
-    width: 300px;
+    left: -400px; /* Initially hidden */
+    width: 400px;
     height: 100%;
     background-color: #333;
     color: white;
@@ -51,6 +56,26 @@
 .sidebar h2 {
     margin-top: 0;
     color: #f0f8ff;
+}
+
+.sidebar .content h3 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.sidebar .content p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.sidebar .content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.sidebar .content li {
+    margin: 5px 0;
 }
 
 .sidebar button {
@@ -82,24 +107,24 @@
 .open-btn:hover {
     background-color: #45a049;
 }
-  
-  /* Main Container Styling */
-  .container {
+
+/* Main Container Styling */
+.container {
     text-align: center;
     max-width: 600px;
     margin: 20px auto;
-    background-color: white;
+    background-color: #B9E5E8;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Lab Section */
-  .lab {
+}
+
+/* Lab Section */
+.lab {
     margin-top: 20px;
-  }
-  
-  .water-container {
+}
+
+.water-container {
     height: 300px;
     display: flex;
     justify-content: center;
@@ -107,84 +132,83 @@
     margin-bottom: 20px;
     position: relative;
     z-index: 0;
-  }
-  
-  .water-image {
+}
+
+.water-image {
     max-width: 40%;
     max-height: 100%;
     display: none;
     margin: 5px;
-  }
-  
-  .gas-state {
+}
+
+.gas-state {
     position: relative;
     width: 150px;
-    height: 300px;
-  }
-  
-  /* Align the glass properly at the bottom */
-  .glass {
-    position: absolute;
+    height: 150px;
+}
+
+/* Align the glass properly at the bottom */
+.glass {
+    position: relative;
     justify-content: center;
     bottom: 0;
-    width: 80%;
+    width: 100%;
     height: auto;
     z-index: 1;
-  }
-  
-  /* Align the steam above the glass */
-  .steam {
+}
+
+/* Align the steam above the glass */
+.steam {
     position: absolute;
-    top: 0;
-    width: 60%; /* Adjust to fit inside the gas-state */
+    top: -3px; /* Corrected typo here */
+    width: 40%; /* Adjust to fit inside the gas-state */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 0;
     animation: steamRise 3s infinite ease-in-out;
-  }
-  
-  /* Steam rising animation */
-  @keyframes steamRise {
+}
+
+/* Steam rising animation */
+@keyframes steamRise {
     0% {
-      opacity: 0.5;
-      transform: translateX(-50%) translateY(10px);
+        opacity: 0.5;
+        transform: translateX(-50%) translateY(10px);
     }
     50% {
-      opacity: 1;
-      transform: translateX(-50%) translateY(-10px);
+        opacity: 1;
+        transform: translateX(-50%) translateY(-10px);
     }
     100% {
-      opacity: 0.5;
-      transform: translateX(-50%) translateY(10px);
+        opacity: 0.5;
+        transform: translateX(-50%) translateY(10px);
     }
-  }
-  
-  /* Temperature and Slider */
-  .temperature-label {
+}
+
+/* Temperature and Slider */
+.temperature-label {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
-  }
-  
-  #temperature-slider {
+}
+
+#temperature-slider {
     width: 80%;
     margin: 10px 0;
-  }
-  
-  .instruction {
+}
+
+.instruction {
     font-size: 16px;
     color: #555;
-  }
-  
-  /* Footer Styling */
-  .footer {
+}
+
+/* Footer Styling */
+.footer {
     background-color: #4A628A;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: auto;
-  }
+}
 
-  
 
   
