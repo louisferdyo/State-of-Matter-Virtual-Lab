@@ -3,12 +3,12 @@ import { getAuth, onAuthStateChanged, signOut, updatePassword, EmailAuthProvider
 import { getFirestore, getDoc, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD1humTQc-2jP0K2G-ECFoNMIuCVs-gxaE",
-    authDomain: "state-of-matter-virtual-lab.firebaseapp.com",
-    projectId: "state-of-matter-virtual-lab",
-    storageBucket: "state-of-matter-virtual-lab.firebasestorage.app",
-    messagingSenderId: "920553604418",
-    appId: "1:920553604418:web:7fe17673a95f4f2bd7b4db"
+    apiKey: apiKey,
+    authDomain: authDomain,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    messagingSenderId: messagingSenderId,
+    appId: appId
 };
 
 // Initialize Firebase
