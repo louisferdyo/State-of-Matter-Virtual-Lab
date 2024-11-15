@@ -53,7 +53,7 @@ if (signUp){
                 const docRef = doc(db, "users", user.uid);
                 setDoc(docRef, userData)
                     .then(() => {
-                        window.location.href = '../account.html';
+                        window.location.href = '../account/account.html';
                     })
                     .catch((error) => {
                         console.error("Error writing document", error);
