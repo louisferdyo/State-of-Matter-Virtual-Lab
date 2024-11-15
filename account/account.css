@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #7AB2D3;
+    --secondary-color: #DFF2EB;
+    --accent-color: #2e8b57;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    padding-left: 15px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+  
+.header nav a {
+    color: var(--white);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+  
+.header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-top: 2px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-info, #changePasswordForm {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.user-info div, #changePasswordForm div {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--accent-color);
+    display: inline-block;
+    width: 120px;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer {
+    background-color: #4A628A;
+    color: var(--white);
+    text-align: center;
+    margin-top: auto;
+}

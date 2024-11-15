@@ -21,7 +21,7 @@ body {
 }
 
 
-.header {
+/* .header {
     background-color: #7AB2D3;
     color: white;
     padding: 20px;
@@ -94,7 +94,7 @@ body {
 
 .open-btn:hover {
     background-color: #45a049;
-}
+} */
 
 
 .container {
@@ -124,6 +124,26 @@ body {
     color: #4a90e2;
     font-weight: bold;
     margin: 10px; 
+}
+
+#resetQuiz {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#resetQuiz:hover {
+    background-color: #3a78c2;
 }
 
 .drop-zone img {
@@ -161,17 +181,16 @@ body {
 }
 
 /* Footer */
-.footer {
+/* .footer {
     background-color: #4A628A;
     color: white;
     text-align: center;
-    padding: 15px;
     margin-top: auto;
-}
+} */
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .sidebar {
+    /* .sidebar {
         width: 400px;
         left: -100%;
     }
@@ -179,7 +198,7 @@ body {
   
     .sidebar.active {
         left: 0; 
-    }
+    } */
 
 
     .open-btn {
@@ -196,13 +215,13 @@ body {
         width: 100px;
     }
 
-    .header nav a {
+    /* .header nav a {
         padding: 10px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
-    .sidebar {
+    /* .sidebar {
         width: 200px; 
         left: -100%;
     }
@@ -213,7 +232,7 @@ body {
 
     .container {
         width: 90%;
-    }
+    } */
 
     .drop-zone {
         width: 100px;
@@ -225,12 +244,12 @@ body {
         font-size: 14px;
     }
 
-    .header {
+    /* .header {
         padding: 10px;
     }
 
     .header nav a {
         padding: 5px;
         font-size: 14px;
-    }
+    } */
 }

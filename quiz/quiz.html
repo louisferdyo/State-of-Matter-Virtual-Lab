@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>States of Matter Drag and Drop Quiz</title>
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -12,8 +13,9 @@
         <nav>
           <a href="../index.html">Experiment</a>
           <a href="quiz.html">Quiz</a>
+          <a href="../account/account.html">Account</a>
         </nav>
-      </header>
+    </header>
       <div class="sidebar" id="guide-sidebar">
         <h2>States of Matter</h2>
         <button id="close-sidebar">Close</button>
@@ -63,6 +65,7 @@
             <p id="scoreDisplay">Score: 0</p> 
             <p id="feedback"></p>
         </div>
+        <button id="resetQuiz" style="display: none;">Reset Quiz</button>
         <h1>Drag and Drop: States of Matter</h1>
         <div class="quiz-area">
             <div class="drop-zone" id="solid-zone">
@@ -96,6 +99,6 @@
         <p>&copy; 2024 Virtual Matter Lab.</p>
     </footer>
     
-    <script src="quiz.js"></script>
+    <script type="module" src="quiz.js"></script>
 </body>
 </html>
